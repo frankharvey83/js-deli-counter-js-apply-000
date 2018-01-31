@@ -6,14 +6,14 @@ function takeANumber(katzDeliLine, name) {
   return(`Welcome, ${name}. You are number ${katzDeliLine.length} in line.`)
 };
 
-const deliLine = ["Steven", "Blake", "Avi"]
+
 function nowServing() {
-if (deliLine.length === 0) {
+if (katzDeliLine.length === 0) {
   return "There is nobody waiting to be served!";
 } else {
-  var name = deliLine[0];
-  deliLine.shift();
-  for (var i = 0; i < deliLine.length + 1; i++)
+  var name = katzDeliLine[0];
+  katzDeliLine.shift();
+  for (var i = 0; i < katzDeliLine.length + 1; i++)
   return`Currently serving ${name}.`;
   }
 };
